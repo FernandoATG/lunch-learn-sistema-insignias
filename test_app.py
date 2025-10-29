@@ -3,7 +3,7 @@ from app import hello_world, add_numbers
 
 
 def test_hello_world():
-    """Test the hello_world function."""
+    """Test the hello_world function ."""
     assert hello_world() == "Hello, World!"
 
 
