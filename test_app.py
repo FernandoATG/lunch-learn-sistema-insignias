@@ -1,4 +1,4 @@
-import pytest
+from math import isclose
 from app import hello_world, add_numbers
 
 
@@ -18,4 +18,4 @@ def test_add_numbers():
 def test_add_numbers_with_floats():
     """Test add_numbers with float inputs."""
     assert add_numbers(1.5, 2.5) == 4.0
-    assert add_numbers(0.1, 0.2) == pytest.approx(0.3)
+    assert isclose(add_numbers(0.1, 0.2), 0.3, rel_tol=1e-9)
